@@ -113,7 +113,7 @@ function UserTable() {
 
         fetchUsers();
 
-        const newSocket = new WebSocket('ws://localhost:3001');
+        const newSocket = new WebSocket('ws://f-pro-deploy-backend.vercel.app');
         newSocket.onmessage = (event) => {
             setUsers(JSON.parse(event.data));
         };

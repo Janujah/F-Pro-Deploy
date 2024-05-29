@@ -9,7 +9,7 @@
 
 // //     useEffect(() => {
 // //         fetchUsers();
-// //         const newSocket = new WebSocket('ws://localhost:3001');
+// //         const newSocket = new WebSocket('ws://f-pro-deploy-backend.vercel.app');
 // //         newSocket.onmessage = (event) => {
 // //             setUsers(JSON.parse(event.data));
 // //         };
@@ -207,7 +207,7 @@
 
 //     useEffect(() => {
 //         fetchPayments();
-//         const newSocket = new WebSocket('ws://localhost:3001');
+//         const newSocket = new WebSocket('ws://f-pro-deploy-backend.vercel.app');
 //         newSocket.onmessage = (event) => {
 //             setPayments(JSON.parse(event.data));
 //         };
