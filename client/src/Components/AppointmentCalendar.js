@@ -73,7 +73,7 @@ const AppointmentCalendar = () => {
   useEffect(() => {
     const fetchEvents = async () => {
       try {
-        const response = await fetch('http://localhost:3001/appointments');
+        const response = await fetch('https://f-pro-deploy-backend.vercel.app/appointments');
         const data = await response.json();
         setEvents(data);
       } catch (error) {

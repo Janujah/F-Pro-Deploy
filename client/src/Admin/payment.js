@@ -17,7 +17,7 @@
 // //     }, []);
 
 // //     const fetchUsers = () => {
-// //         fetch('http://localhost:3001/Doctors/view')
+// //         fetch('https://f-pro-deploy-backend.vercel.app/Doctors/view')
 // //             .then(response => response.json())
 // //             .then(data => setUsers(data))
 // //             .catch(error => {
@@ -48,7 +48,7 @@
 // //     };
 
 // //     const verifyUser = (id) => {
-// //         fetch(`http://localhost:3001/Doctors/verify/${id}`, {
+// //         fetch(`https://f-pro-deploy-backend.vercel.app/Doctors/verify/${id}`, {
 // //             method: 'PATCH',
 // //             headers: { 'Content-Type': 'application/json' },
 // //         })
@@ -70,7 +70,7 @@
 
 // //     const deleteUser = (id) => {
 // //         if (window.confirm('Are you sure you want to delete this user?')) {
-// //             fetch(`http://localhost:3001/Doctors/delete/${id}`, {
+// //             fetch(`https://f-pro-deploy-backend.vercel.app/Doctors/delete/${id}`, {
 // //                 method: 'DELETE',
 // //             })
 // //                 .then(response => {
@@ -112,7 +112,7 @@
 // //             return;
 // //         }
 
-// //         fetch(`http://localhost:3001/Doctors/update/${editFormData._id}`, {
+// //         fetch(`https://f-pro-deploy-backend.vercel.app/Doctors/update/${editFormData._id}`, {
 // //             method: 'PUT',
 // //             headers: {
 // //                 'Content-Type': 'application/json',
@@ -215,7 +215,7 @@
 //     }, []);
 
 //     const fetchPayments = () => {
-//         fetch('http://localhost:3001/payments/view')
+//         fetch('https://f-pro-deploy-backend.vercel.app/payments/view')
 //             .then(response => response.json())
 //             .then(data => setPayments(data))
 //             .catch(error => {
@@ -305,7 +305,7 @@
 //     }, []);
 
 //     const fetchPayments = () => {
-//         fetch('http://localhost:3001/stripe/payments')
+//         fetch('https://f-pro-deploy-backend.vercel.app/stripe/payments')
 //             .then(response => response.json())
 //             .then(data => setPayments(data))
 //             .catch(error => {
@@ -402,7 +402,7 @@
 //     const fetchUserDetails = () => {
 //         const token = localStorage.getItem('token'); // Assuming token is stored in local storage
 //         if (token) {
-//             fetch('http://localhost:3001/user/details', {
+//             fetch('https://f-pro-deploy-backend.vercel.app/user/details', {
 //                 method: 'GET',
 //                 headers: {
 //                     'Authorization': `Bearer ${token}`,
@@ -422,7 +422,7 @@
 //     };
 
 //     const fetchPayments = () => {
-//         fetch('http://localhost:3001/stripe/payments')
+//         fetch('https://f-pro-deploy-backend.vercel.app/stripe/payments')
 //             .then(response => response.json())
 //             .then(data => setPayments(data))
 //             .catch(error => {
@@ -516,7 +516,7 @@ function PaymentTable() {
     const fetchUserDetails = () => {
         const token = localStorage.getItem('token'); // Assuming token is stored in local storage
         if (token) {
-            fetch('http://localhost:3001/user/details', {
+            fetch('https://f-pro-deploy-backend.vercel.app/user/details', {
                 method: 'GET',
                 headers: {
                     'Authorization': `Bearer ${token}`,
@@ -536,7 +536,7 @@ function PaymentTable() {
     };
 
     const fetchPayments = () => {
-        fetch('http://localhost:3001/stripe/payments')
+        fetch('https://f-pro-deploy-backend.vercel.app/stripe/payments')
         .then(response => response.json())
         .then(data => {
             console.log('Fetched payments data:', data); // Log the fetched data
@@ -635,7 +635,7 @@ export default PaymentTable;
 //     }, []);
 
 //     const fetchPayments = () => {
-//         fetch('http://localhost:3001/stripe/payments-with-users')
+//         fetch('https://f-pro-deploy-backend.vercel.app/stripe/payments-with-users')
 //             .then(response => response.json())
 //             .then(data => setPayments(data))
 //             .catch(error => {

@@ -18,7 +18,7 @@
 // //     setError('');
 
 // //     try {
-// //       const response = await axios.post('http://localhost:3001/login', {
+// //       const response = await axios.post('https://f-pro-deploy-backend.vercel.app/login', {
 // //         email,
 // //         password
 // //       });
@@ -112,7 +112,7 @@
 //     setError('');
 
 //     try {
-//       const response = await axios.post('http://localhost:3001/login', {
+//       const response = await axios.post('https://f-pro-deploy-backend.vercel.app/login', {
 //         Email: email, // Ensure these property names match your server's expected parameters
 //         Password: password
 //       });
@@ -213,7 +213,7 @@
 //     setError('');
 
 //     try {
-//       const response = await fetch('http://localhost:3001/user/login', userdata, {
+//       const response = await fetch('https://f-pro-deploy-backend.vercel.app/user/login', userdata, {
 //           method: 'POST',
 //           headers: {
 //               'Content-Type': 'application/json',
@@ -325,7 +325,7 @@ function LoginPage() {
     setError('');
 
     try {
-      const response = await fetch('http://localhost:3001/user/login', {
+      const response = await fetch('https://f-pro-deploy-backend.vercel.app/user/login', {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json',

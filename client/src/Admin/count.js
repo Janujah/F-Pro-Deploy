@@ -15,11 +15,11 @@ function AdminDashboard() {
     const fetchCounts = async () => {
       try {
         const responses = await Promise.all([
-          fetch('http://localhost:3001/count/users'),
-          fetch('http://localhost:3001/count/doctors'),
-          fetch('http://localhost:3001/count/technicians'),
-          fetch('http://localhost:3001/count/consumers'),
-          fetch('http://localhost:3001/count/payments'),
+          fetch('https://f-pro-deploy-backend.vercel.app/count/users'),
+          fetch('https://f-pro-deploy-backend.vercel.app/count/doctors'),
+          fetch('https://f-pro-deploy-backend.vercel.app/count/technicians'),
+          fetch('https://f-pro-deploy-backend.vercel.app/count/consumers'),
+          fetch('https://f-pro-deploy-backend.vercel.app/count/payments'),
         ]);
 
         // Check for non-OK responses

@@ -17,7 +17,7 @@ function UserTable() {
     }, []);
 
     const fetchUsers = () => {
-        fetch('http://localhost:3001/SignUp/view')
+        fetch('https://f-pro-deploy-backend.vercel.app/SignUp/view')
             .then(response => response.json())
             .then(data => setUsers(data))
             .catch(error => {
@@ -48,7 +48,7 @@ function UserTable() {
     };
 
     const verifyUser = (id) => {
-        fetch(`http://localhost:3001/SignUp/verify/${id}`, {
+        fetch(`https://f-pro-deploy-backend.vercel.app/SignUp/verify/${id}`, {
             method: 'PATCH',
             headers: { 'Content-Type': 'application/json' },
         })
@@ -70,7 +70,7 @@ function UserTable() {
 
     const deleteUser = (id) => {
         if (window.confirm('Are you sure you want to delete this user?')) {
-            fetch(`http://localhost:3001/SignUp/delete/${id}`, {
+            fetch(`https://f-pro-deploy-backend.vercel.app/SignUp/delete/${id}`, {
                 method: 'DELETE',
             })
                 .then(response => {
@@ -112,7 +112,7 @@ function UserTable() {
             return;
         }
 
-        fetch(`http://localhost:3001/SignUp/update/${editFormData._id}`, {
+        fetch(`https://f-pro-deploy-backend.vercel.app/SignUp/update/${editFormData._id}`, {
             method: 'PUT',
             headers: {
                 'Content-Type': 'application/json',

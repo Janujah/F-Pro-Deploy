@@ -144,7 +144,7 @@
 //     }, []);
 
 //     const fetchUsers = () => {
-//         fetch('http://localhost:3001/Doctors/view')
+//         fetch('https://f-pro-deploy-backend.vercel.app/Doctors/view')
 //             .then(response => response.json())
 //             .then(data => setUsers(data))
 //             .catch(error => {
@@ -171,7 +171,7 @@
 //             return;
 //         }
 
-//         fetch(`http://localhost:3001/Doctors/verify/${id}`, {
+//         fetch(`https://f-pro-deploy-backend.vercel.app/Doctors/verify/${id}`, {
 //             method: 'PATCH',
 //             headers: { 'Content-Type': 'application/json' },
 //         })
@@ -198,7 +198,7 @@
 //         }
 
 //         if (window.confirm('Are you sure you want to delete this user?')) {
-//             fetch(`http://localhost:3001/Doctors/delete/${id}`, {
+//             fetch(`https://f-pro-deploy-backend.vercel.app/Doctors/delete/${id}`, {
 //                 method: 'DELETE',
 //             })
 //                 .then(response => {
@@ -244,7 +244,7 @@
 //             return;
 //         }
 
-//         fetch(`http://localhost:3001/Doctors/update/${id}`, {
+//         fetch(`https://f-pro-deploy-backend.vercel.app/Doctors/update/${id}`, {
 //             method: 'PUT',
 //             headers: {
 //                 'Content-Type': 'application/json',
@@ -394,7 +394,7 @@ function UserTable() {
     }, []);
 
     const fetchUsers = () => {
-        fetch('http://localhost:3001/Doctors/view')
+        fetch('https://f-pro-deploy-backend.vercel.app/Doctors/view')
             .then(response => response.json())
             .then(data => setUsers(data))
             .catch(error => {
@@ -425,7 +425,7 @@ function UserTable() {
     };
 
     const verifyUser = (id) => {
-        fetch(`http://localhost:3001/Doctors/verify/${id}`, {
+        fetch(`https://f-pro-deploy-backend.vercel.app/Doctors/verify/${id}`, {
             method: 'PATCH',
             headers: { 'Content-Type': 'application/json' },
         })
@@ -447,7 +447,7 @@ function UserTable() {
 
     const deleteUser = (id) => {
         if (window.confirm('Are you sure you want to delete this user?')) {
-            fetch(`http://localhost:3001/Doctors/delete/${id}`, {
+            fetch(`https://f-pro-deploy-backend.vercel.app/Doctors/delete/${id}`, {
                 method: 'DELETE',
             })
                 .then(response => {
@@ -489,7 +489,7 @@ function UserTable() {
             return;
         }
 
-        fetch(`http://localhost:3001/Doctors/update/${editFormData._id}`, {
+        fetch(`https://f-pro-deploy-backend.vercel.app/Doctors/update/${editFormData._id}`, {
             method: 'PUT',
             headers: {
                 'Content-Type': 'application/json',

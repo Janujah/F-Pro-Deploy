@@ -120,7 +120,7 @@ export default OrthoResourcesNavbar;
 //       } else {
 //         // Optionally, fetch from a backend endpoint
 //         try {
-//           const response = await fetch('http://localhost:3001/Technicians/profile', { method: 'GET' });
+//           const response = await fetch('https://f-pro-deploy-backend.vercel.app/Technicians/profile', { method: 'GET' });
 //           const data = await response.json();
 //           setProfile(data);
 //         } catch (error) {

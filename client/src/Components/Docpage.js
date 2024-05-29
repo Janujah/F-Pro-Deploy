@@ -7,7 +7,7 @@ function DoctorForm({ doctor, onUpdate }) {
 
     const handleSubmit = (e) => {
         e.preventDefault();
-        fetch(`http://localhost:3001/Doctors/view/${doctor._id}`, {
+        fetch(`https://f-pro-deploy-backend.vercel.app/Doctors/view/${doctor._id}`, {
             method: 'PUT',
             headers: {
                 'Content-Type': 'application/json',

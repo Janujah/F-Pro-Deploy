@@ -48,7 +48,7 @@
 //   useEffect(() => {
 //     const fetchAppointments = async () => {
 //       try {
-//         const response = await fetch(`http://localhost:3001/Doctors/${doctorId}/appointments`, { method: 'GET' });
+//         const response = await fetch(`https://f-pro-deploy-backend.vercel.app/Doctors/${doctorId}/appointments`, { method: 'GET' });
 //         if (response.ok) {
 //           const data = await response.json();
 //           setAppointments(data);
@@ -102,7 +102,7 @@ function UserTable() {
 
         const fetchUsers = async () => {
             try {
-                const response = await fetch('http://localhost:3001/consult/view');
+                const response = await fetch('https://f-pro-deploy-backend.vercel.app/consult/view');
                 const data = await response.json();
                 setUsers(data);
             } catch (error) {
@@ -141,7 +141,7 @@ function UserTable() {
 
     const verifyUser = async (id) => {
         try {
-            const response = await fetch(`http://localhost:3001/consult/verify/${id}`, {
+            const response = await fetch(`https://f-pro-deploy-backend.vercel.app/consult/verify/${id}`, {
                 method: 'PATCH',
                 headers: { 'Content-Type': 'application/json' },
             });
@@ -161,7 +161,7 @@ function UserTable() {
     const deleteUser = async (id) => {
         if (window.confirm('Are you sure you want to delete this user?')) {
             try {
-                const response = await fetch(`http://localhost:3001/consult/delete/${id}`, {
+                const response = await fetch(`https://f-pro-deploy-backend.vercel.app/consult/delete/${id}`, {
                     method: 'DELETE',
                 });
                 if (!response.ok) {
@@ -201,7 +201,7 @@ function UserTable() {
         }
 
         try {
-            const response = await fetch(`http://localhost:3001/consult/update/${editFormData._id}`, {
+            const response = await fetch(`https://f-pro-deploy-backend.vercel.app/consult/update/${editFormData._id}`, {
                 method: 'PUT',
                 headers: {
                     'Content-Type': 'application/json',

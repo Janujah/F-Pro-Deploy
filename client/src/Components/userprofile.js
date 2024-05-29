@@ -9,7 +9,7 @@
 //     useEffect(() => {
 //         const fetchUserData = async () => {
 //             try {
-//                 const response = await fetch(`http://localhost:3001/doctors/${id}`);
+//                 const response = await fetch(`https://f-pro-deploy-backend.vercel.app/doctors/${id}`);
 //                 if (!response.ok) {
 //                     throw new Error('Network response was not ok');
 //                 }
@@ -77,7 +77,7 @@
 //     useEffect(() => {
 //         const fetchUserData = async () => {
 //             try {
-//                 const response = await fetch(`http://localhost:3001/Doctors/view/${id}`, {
+//                 const response = await fetch(`https://f-pro-deploy-backend.vercel.app/Doctors/view/${id}`, {
 //                     method: 'GET',
 //                     headers: {
 //                         'Content-Type': 'application/json',
@@ -185,7 +185,7 @@ function ProfileDetailsPage() {
     const navigate = useNavigate();
 
     useEffect(() => {
-        fetch(`http://localhost:3001/Doctors/view/${id}`)
+        fetch(`https://f-pro-deploy-backend.vercel.app/Doctors/view/${id}`)
             .then(response => {
                 if (!response.ok) {
                     throw new Error('Network response was not ok');
@@ -286,7 +286,7 @@ export default ProfileDetailsPage;
 //                     return;
 //                 }
 
-//                 const response = await fetch(`http://localhost:3001/Doctors/view/${doctor._id}`);
+//                 const response = await fetch(`https://f-pro-deploy-backend.vercel.app/Doctors/view/${doctor._id}`);
 //                 if (!response.ok) {
 //                     throw new Error('Failed to fetch profile');
 //                 }
@@ -351,7 +351,7 @@ export default ProfileDetailsPage;
 //             }
 
 //             try {
-//                 const response = await fetch(`http://localhost:3001/Doctors/view/${doctor.id}`);
+//                 const response = await fetch(`https://f-pro-deploy-backend.vercel.app/Doctors/view/${doctor.id}`);
 //                 if (!response.ok) {
 //                     throw new Error('Failed to fetch data');
 //                 }
